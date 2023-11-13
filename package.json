@@ -1,0 +1,32 @@
+{
+  "name": "lakshmaji.github.io",
+  "version": "1.0.0",
+  "description": "portfolio and experience",
+  "main": "index.html",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lakshmaji/lakshmaji.github.io.git"
+  },
+  "keywords": [
+    "resume",
+    "portfolio",
+    "experience",
+    "angular",
+    "laravel",
+    "nodejs",
+    "RxJS"
+  ],
+  "author": "Lakshmaji <lakshmaji@users.noreply.github.com> (https://github.com/lakshmaji)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lakshmaji/lakshmaji.github.io/issues"
+  },
+  "homepage": "https://github.com/lakshmaji/lakshmaji.github.io#readme"
+}

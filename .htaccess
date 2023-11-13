@@ -1,0 +1,11 @@
+# Do not remove this line or mod_rewrite rules and search engine friendly URLs will stop working
+RewriteBase /
+SetEnvIfNoCase User-Agent "^Wget" bad_bot
+
+    <Limit GET POST>
+    Order Allow,Deny
+    Allow from all
+    Deny from env=bad_bot
+    </Limit>
+
+ErrorDocument 404 /404.html
