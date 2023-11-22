@@ -1,0 +1,131 @@
+#education .status {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 6px 15px;
+  border-radius: 14px;
+  font-weight: 600;
+}
+
+#education .completed {
+  background: #e1f6f4;
+  color: #36aaa7;
+}
+
+#education .in-progress {
+  background: #e4effd;
+  color: #69a7f3;
+}
+
+#education .certs {
+  display: flex;
+  background: #21253f;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.certs > div {
+  flex: 1;
+  padding: 20px;
+}
+
+.certs > div:nth-child(2) {
+  flex: 2;
+}
+
+.certs > .custom-content-wrapper {
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+.custom-content-wrapper > .collection > .collection-item {
+  line-height: initial !important;
+  border-bottom: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cert-link {
+  color: #616576;
+  padding: 8px 30px 8px 8px;
+}
+
+.cert-link::after {
+  content: "\2192";
+  padding-left: 12px;
+}
+
+.certs > div > .providers {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.certs > div:first-child > h6 {
+  color: white;
+}
+
+.providers > div {
+  padding: 20px;
+  border-radius: 25px;
+  height: 100px;
+  width: 100px;
+  background: black;
+  color: white;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.providers > div:first-child {
+  background: #f931a6;
+}
+
+.providers > div:nth-child(2) {
+  background: #31abc1;
+}
+
+.providers > div:nth-child(3) {
+  background: #854bc6;
+}
+
+.providers > div:nth-child(4) {
+  background: #635ff0;
+}
+.providers > div:nth-child(5) {
+  background: #f18a68;
+}
+
+.code-evaluation-scores {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 8em;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.code-evaluation-scores > .ces-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 10px;
+  padding: 10px;
+}
+
+.code-evaluation-scores > .ces-container > .ces-item {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 2 / 1;
+}
+
+.ces-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

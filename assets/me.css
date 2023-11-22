@@ -1,0 +1,241 @@
+.root-dir {
+  background: #7dcd7d;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+.summary-wrapper {
+  background: #edf1ebf2;
+  background: #fffcfc;
+  border-radius: 20px;
+  padding: 50px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.classic-notes {
+  padding-top: 8em;
+  color: hsla(159, 42%, 88%, 1);
+  color: hsla(36, 31%, 90%, 1);
+  line-height: 3em;
+  font-weight: 200;
+  text-align: center;
+}
+
+.classic-notes > .button-56 {
+  background: white;
+}
+
+footer {
+  color: hsla(36, 31%, 90%, 1);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  border-radius: 25px;
+  margin: 15em 0 15em 0;
+}
+
+.disclaimer {
+  font-size: 12px;
+  font-weight: 100;
+  color: hsla(159, 42%, 88%, 1);
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.disclaimer > .trex {
+  font-size: 30px;
+  background-color: white;
+  padding: 4px 8px;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.techinical-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.wire-arch {
+  margin: 10px 0px;
+}
+
+.arch-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.arch-chip {
+  padding: 4px 14px;
+  color: rgb(36, 29, 29);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+.wire-frontend,
+.wire-backend,
+.wire-fullstack,
+.wire-web-app,
+.wire-mobile-app,
+.wire-database,
+.wire-app-servers,
+.wire-containers,
+.wire-communication,
+.wire-realtime,
+.wire-devops,
+.wire-payments {
+  padding: 10px 20px;
+  border: 1px dotted;
+}
+
+.wire-frontend,
+.wire-communication,
+.wire-containers,
+.wire-backend,
+.wire-web-app,
+.wire-mobile-app,
+.wire-fullstack,
+.wire-tooling,
+.wire-payments {
+  margin-bottom: 20px;
+}
+
+.wire-tooling > div:first-child {
+  /* border: 1px dashed rgb(17, 109, 109); */
+  padding: 10px;
+}
+
+.wire-payments {
+  /* border: 1px dashed rgb(17, 109, 109); */
+  border-color: rgb(17, 109, 109);
+}
+
+.wire-devops {
+  border-color: rgb(17, 109, 109);
+}
+
+.wire-frontend {
+  border-color: rgb(17, 109, 109);
+}
+
+.wire-frontend > .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wire-communication {
+  border-color: yellowgreen;
+}
+
+.wire-backend {
+  border-color: rebeccapurple;
+}
+
+.wire-containers {
+  border-color: purple;
+}
+
+.wire-app-servers {
+  border-color: red;
+}
+
+.wire-web-app {
+  border-color: rgb(119, 77, 23);
+}
+
+.wire-mobile-app {
+  border-color: rgb(12, 117, 38);
+}
+
+.wire-fullstack {
+  border-color: rgb(20, 107, 151);
+}
+
+.wire-realtime {
+  border-color: violet;
+  display: flex;
+}
+
+.wire-database {
+  border-color: rgb(41, 134, 56);
+}
+
+.techinical-skills > div > span:first-child {
+}
+.techinical-skills > h2 {
+}
+
+.wire-ai {
+  padding: 20px;
+  text-align: left;
+  width: 100%;
+}
+
+.skill-icon {
+}
+
+#default {
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  padding: 10em 0 0 0;
+}
+
+.about-me-caption {
+  font-size: 22px;
+  font-weight: 100;
+  line-height: 33px;
+}
+
+.about-me-caption > span {
+  color: #ff2f90fa;
+  color: #2cb5b3fa;
+  font-weight: 300;
+}
+
+.summary-caption {
+  display: flex;
+  justify-content: center;
+  max-width: 50em;
+  padding: 1em 0 1em 0;
+  margin: 0 auto;
+  color: rgb(63, 62, 61);
+}
+
+.summary-links {
+  padding: 1em 0 10em 0;
+}
+
+.me {
+  font-size: 7em;
+  color: #effffa;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+
+  50% {
+    background-position: 100%;
+  }
+
+  100% {
+    background-position: 0%;
+  }
+}

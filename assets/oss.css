@@ -1,0 +1,97 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: auto;
+}
+
+.grid-item {
+  margin: 0.5em;
+  max-width: 25em;
+  min-width: 15em;
+  flex-grow: 1;
+  flex-basis: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.grid-title {
+  font-weight: bolder;
+  font-size: 1.3em;
+  padding-bottom: 0.3em;
+  margin: 0.5em auto;
+  display: none;
+}
+
+.grid-info {
+  font-weight: 500;
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+.grid-image {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 1em;
+}
+
+.grid-item > .benefits,
+.grid-item > .why,
+.grid-item > .button-31 {
+  padding: 0px 20px 0px 20px;
+}
+
+.grid-item > .benefits {
+  padding: 0px 5px 0px 5px;
+}
+
+.grid-item .why > h6,
+.grid-item .benefits > h6 {
+  display: none;
+}
+
+#opensource .box_tabs_ananth {
+  background: transparent !important;
+  box-shadow: none;
+}
+
+.grid-item .why > .grid-info {
+  font-weight: 600;
+  text-align: justify;
+}
+
+.button-34 {
+  background: #5e5df0;
+  border-radius: 999px;
+  box-shadow: #5e5df0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji",
+    NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji",
+    EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+  margin: 0 auto;
+  margin-right: 10px;
+}
