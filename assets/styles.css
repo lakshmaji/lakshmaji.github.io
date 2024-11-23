@@ -251,36 +251,11 @@ ul.sidebar li p {
   background: white;
 }
 
-#experience h3,
-#projects h3,
-#education h3,
-#opensource h3,
-.techinical-skills > h2,
-.about-me-title {
-  font-family: "Monoton", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  background: linear-gradient(90deg, #ff0080, #e4e0dc, #ff0080);
-  background-size: 300%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: gradient 10s ease infinite;
-}
-.about-me-title {
-  text-align: center;
-}
-
 /* .monoton-regular {
   font-family: "Monoton", sans-serif;
   font-weight: 400;
   font-style: normal;
 } */
-
-.fascinate-regular {
-  font-family: "Fascinate", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
 
 body {
   height: 100vh;
@@ -304,11 +279,27 @@ body {
 }
 
 body > .content {
-  height: 100%;
+  height: 100vh;
   overflow-y: auto;
   box-sizing: border-box;
 }
 
 #projects .project-item {
   background: white !important;
+}
+
+.btn-floating {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  overflow: hidden;
+}
+
+.project-icon {
+  max-width: 60%;
+  max-height: 60%;
 }

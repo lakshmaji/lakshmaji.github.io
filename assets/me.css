@@ -1,3 +1,27 @@
+.fascinate-regular {
+  font-family: "Fascinate", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#experience h3,
+#projects h3,
+#education h3,
+#opensource h3,
+.techinical-skills > h2,
+.about-me-title {
+  font-family: "Monoton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background: linear-gradient(90deg, #ff0080, #e4e0dc, #ff0080);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 10s ease infinite;
+}
+.about-me-title {
+  text-align: center;
+}
 .root-dir {
   background: #7dcd7d;
   padding: 5px;
@@ -33,6 +57,15 @@ footer {
   font-weight: 300;
   border-radius: 25px;
   margin: 15em 0 15em 0;
+}
+
+footer > div {
+  padding: 10em;
+  padding: 70px 0px;
+  border: 2px solid white;
+  border-radius: 8px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .disclaimer {
@@ -72,6 +105,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  justify-content: center;
 }
 
 .arch-chip {
@@ -80,7 +114,10 @@ footer {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  border-radius: 10px;
+  border-radius: 3px;
+  background: rebeccapurple;
+  color: white;
+  font-weight: 100;
 }
 
 .wire-frontend,
@@ -94,9 +131,11 @@ footer {
 .wire-communication,
 .wire-realtime,
 .wire-devops,
-.wire-payments {
+.wire-storage,
+.wire-streaming,
+.wire-datalake {
   padding: 10px 20px;
-  border: 1px dotted;
+  border: 0.1px dotted;
 }
 
 .wire-frontend,
@@ -107,8 +146,14 @@ footer {
 .wire-mobile-app,
 .wire-fullstack,
 .wire-tooling,
-.wire-payments {
+.wire-realtime {
   margin-bottom: 20px;
+}
+.wire-devops,
+.wire-fullstack,
+.wire-tooling,
+.wire-containers {
+  margin-bottom: 80px;
 }
 
 .wire-tooling > div:first-child {
@@ -116,13 +161,9 @@ footer {
   padding: 10px;
 }
 
-.wire-payments {
-  /* border: 1px dashed rgb(17, 109, 109); */
-  border-color: rgb(17, 109, 109);
-}
-
 .wire-devops {
   border-color: rgb(17, 109, 109);
+  border: none;
 }
 
 .wire-frontend {
@@ -132,6 +173,13 @@ footer {
 .wire-frontend > .container {
   display: flex;
   justify-content: space-between;
+}
+
+.wire-realtime > .container-fluid,
+.wire-datalake > .container-fluid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 .wire-communication {
@@ -164,7 +212,6 @@ footer {
 
 .wire-realtime {
   border-color: violet;
-  display: flex;
 }
 
 .wire-database {
@@ -182,7 +229,27 @@ footer {
   width: 100%;
 }
 
+.skill-title,
 .skill-icon {
+  z-index: 11;
+  position: relative;
+}
+.skill-icon {
+  object-fit: contain;
+}
+
+.skill-title {
+  background: white;
+  width: fit-content;
+  margin-bottom: 10px;
+
+  background: white;
+  width: fit-content;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  text-shadow: 1px 1px 1px #ffffffdb, 2px 3px 1px #24b2bc7d;
+  color: #121b15c4;
 }
 
 #default {
@@ -195,9 +262,9 @@ footer {
 }
 
 .about-me-caption {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 100;
-  line-height: 33px;
+  line-height: 55px;
 }
 
 .about-me-caption > span {

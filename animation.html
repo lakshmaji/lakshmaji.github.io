@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>with animation</title>
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=5.0"
+      name="viewport"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/materialize/css/materialize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/me.css" />
+    <style>
+      body {
+        height: 100vh;
+        overflow: hidden;
+        background: radial-gradient(ellipse at top, #557c56, transparent),
+          radial-gradient(ellipse at bottom, #1f4529, transparent);
+        background-size: 200% 200%;
+        animation: gradientAnimation 20s ease infinite;
+      }
+
+      body > .content {
+        height: 100vh;
+        overflow-y: auto;
+        box-sizing: border-box;
+      }
+
+      #techinical-skills-container {
+        position: relative;
+        overflow: hidden;
+      }
+
+      #arrowCanvas {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 10;
+      }
+
+      .wire-streaming {
+        background: #47d8a47a;
+        border: none;
+      }
+
+      .wire-storage {
+        border: none;
+        background: #00ffff61;
+      }
+
+      .wire-database {
+        background: rgb(76 126 240 / 57%);
+        border: none;
+      }
+      .skill-title {
+        background: none;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m12" id="test1">
+            <div class="row" id="default">
+              <div class="summary-wrapper">
+                <h2 class="about-me-title">About me</h2>
+                <div class="about-me-caption">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+
+                <div id="techinical-skills-container">
+                  <div class="techinical-skills">
+                    <h2>Technical Skill</h2>
+                    <div class="wire-fullstack">
+                      <div class="skill-title">Full Stack</div>
+                      <div class="wire-frontend" id="wire-frontend">
+                        <div class="skill-title">Frontend</div>
+                        <div class="container">
+                          <div class="wire-web-app" id="wire-web-app">
+                            <div class="skill-title">Web</div>
+                            <img
+                              class="skill-icon"
+                              src="https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&logo=React&logoColor=black"
+                              alt="React.js"
+                            />
+                            <img
+                              class="skill-icon"
+                              src="https://img.shields.io/badge/Next.js-000000.svg?style=for-the-badge&logo=nextdotjs&logoColor=white"
+                              alt="Next.js"
+                            />
+                            <img
+                              class="skill-icon"
+                              src="https://img.shields.io/badge/Remix-000000.svg?style=for-the-badge&logo=Remix&logoColor=white"
+                              alt="Remix.js"
+                            />
+                            <img
+                              class="skill-icon"
+                              src="https://img.shields.io/badge/Angular-0F0F11.svg?style=for-the-badge&logo=Angular&logoColor=white"
+                              alt="Angular 2,4,5"
+                            />
+                          </div>
+                          <div class="wire-mobile-app" id="wire-mobile-app">
+                            <div class="skill-title">Mobile (hybrid)</div>
+                            <img
+                              class="skill-icon"
+                              src="https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&logo=React&logoColor=black"
+                              alt="ReactNative"
+                            />
+                            <img
+                              class="skill-icon"
+                              src="https://img.shields.io/badge/expo-000000.svg?style=for-the-badge&logo=expo&logoColor=white"
+                              alt="Expo"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="wire-communication">
+                        <div class="skill-title">Protcols</div>
+                        <img
+                          class="skill-icon"
+                          src="https://img.shields.io/badge/GraphQL-E10098.svg?style=for-the-badge&logo=GraphQL&logoColor=white"
+                          alt="GraphQL"
+                        />
+                        <img
+                          class="skill-icon"
+                          src="https://img.shields.io/badge/gRPC-E1009C.svg?style=for-the-badge&logo=gRPC&logoColor=white"
+                          alt="gRPC"
+                        />
+                        <img
+                          class="skill-icon"
+                          src="https://img.shields.io/badge/REST%20API-8A2BE2?style=for-the-badge"
+                          alt="REST API"
+                        />
+                      </div>
+                      <div class="wire-backend" id="wire-backend">
+                        <div class="skill-title">Backend</div>
+                        <div class="wire-containers">
+                          <div class="skill-title">Container</div>
+                          <img
+                            class="skill-icon"
+                            src="https://img.shields.io/badge/Docker-2496ED.svg?style=for-the-badge&logo=Docker&logoColor=white"
+                            alt="docker"
+                          />
+                          <div class="wire-app-servers" id="wire-app-servers">
+                            <div class="skill-title">app servers</div>
+
+                            <img
+                              class="skill-icon"
+                              src="https://img.shields.io/badge/Express-000000.svg?style=for-the-badge&logo=Express&logoColor=white"
+                              alt="Express.js"
+                            />
+                            <img
+                              class="skill-icon"
+                              src="https://img.shields.io/badge/Django-092E20.svg?style=for-the-badge&logo=Django&logoColor=white"
+                              alt="django"
+                            />
+                            <img
+                              class="skill-icon"
+                              src="https://img.shields.io/badge/Node.js-5FA04E.svg?style=for-the-badge&logo=nodedotjs&logoColor=white"
+                              alt="Node.js"
+                            />
+                            <img
+                              class="skill-icon"
+                              src="https://img.shields.io/badge/Go-00ADD8.svg?style=for-the-badge&logo=Go&logoColor=white"
+                              alt="Go"
+                            />
+                            <img
+                              class="skill-icon"
+                              src="https://img.shields.io/badge/TypeScript-3178C6.svg?style=for-the-badge&logo=TypeScript&logoColor=white"
+                              alt="TypeScript"
+                            />
+                            <img
+                              class="skill-icon"
+                              src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=black"
+                              alt="Javascript"
+                            />
+                            <img
+                              class="skill-icon"
+                              src="https://img.shields.io/badge/Python-3776AB.svg?style=for-the-badge&logo=Python&logoColor=white"
+                              alt="Python"
+                            />
+
+                            <img
+                              class="skill-icon"
+                              src="https://img.shields.io/badge/PHP-777BB4.svg?style=for-the-badge&logo=PHP&logoColor=white"
+                              alt="PHP"
+                            />
+
+                            <img
+                              class="skill-icon"
+                              src="https://img.shields.io/badge/Laravel-FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white"
+                              alt="Laravel"
+                            />
+                          </div>
+                        </div>
+                        <div class="wire-realtime" id="wire-realtime">
+                          <div class="skill-title">persistence & realtime</div>
+                          <div class="container-fluid">
+                            <div class="wire-database">
+                              <div class="skill-title">Database</div>
+                              <img
+                                class="skill-icon"
+                                src="https://img.shields.io/badge/Amazon%20DynamoDB-4053D6.svg?style=for-the-badge&logo=Amazon-DynamoDB&logoColor=white"
+                                alt="DynamoDB"
+                              />
+                              <img
+                                class="skill-icon"
+                                src="https://img.shields.io/badge/PostgreSQL-4169E1.svg?style=for-the-badge&logo=PostgreSQL&logoColor=white"
+                                alt="PostgreSQL"
+                              />
+                              <img
+                                class="skill-icon"
+                                src="https://img.shields.io/badge/Redis-FF4438.svg?style=for-the-badge&logo=Redis&logoColor=white"
+                                alt="Redis"
+                              />
+                            </div>
+
+                            <div class="wire-streaming">
+                              <div class="skill-title">Streaming</div>
+                              <img
+                                class="skill-icon"
+                                src="https://img.shields.io/badge/NATS.io-27AAE1.svg?style=for-the-badge&logo=natsdotio&logoColor=white"
+                                alt="NATS.io"
+                              />
+                            </div>
+
+                            <div class="wire-storage">
+                              <div class="skill-title">Storage</div>
+                              <img
+                                class="skill-icon"
+                                src="https://img.shields.io/badge/Amazon%20S3-569A31.svg?style=for-the-badge&logo=Amazon-S3&logoColor=white"
+                                alt="AWS S3"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <canvas id="arrowCanvas"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.onload = function () {
+        const technicalSkills = document.getElementById(
+          "techinical-skills-container"
+        );
+        const canvas = document.getElementById("arrowCanvas");
+
+        canvas.width = technicalSkills.offsetWidth;
+        canvas.height = technicalSkills.offsetHeight;
+
+        const rect = technicalSkills.getBoundingClientRect();
+
+        canvas.style.position = "absolute";
+        canvas.style.top = `-${rect.top}px`;
+
+        window.onresize = function () {
+          const rect = technicalSkills.getBoundingClientRect();
+          canvas.style.top = `${rect.top}px`;
+          canvas.style.left = `${rect.left}px`;
+        };
+
+        const ctx = canvas.getContext("2d");
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        let animationFrameId;
+        let startTime = null;
+        const speed = 100;
+        let dashOffset = 0;
+
+        function drawLine(startX, startY, endX, endY, color = "black") {
+          ctx.beginPath();
+          ctx.moveTo(startX, startY);
+          ctx.lineTo(endX, endY);
+          ctx.strokeStyle = color;
+          ctx.lineWidth = 1;
+
+          ctx.lineCap = "round";
+          // ctx.setLineDash([2, 2]);
+          // ctx.setLineDash([20, 3, 3, 3, 3, 3, 3, 3]);
+          ctx.setLineDash([6, 4]);
+          // ctx.setLineDash([20, 5]);
+
+          ctx.lineDashOffset = dashOffset;
+          ctx.stroke();
+          ctx.setLineDash([]);
+        }
+
+        function drawArrowhead(x, y, angle, color) {
+          const headLength = 10;
+          ctx.beginPath();
+          ctx.moveTo(x, y);
+          ctx.lineTo(
+            x - headLength * Math.cos(angle - Math.PI / 6),
+            y - headLength * Math.sin(angle - Math.PI / 6)
+          );
+          ctx.lineTo(
+            x - headLength * Math.cos(angle + Math.PI / 6),
+            y - headLength * Math.sin(angle + Math.PI / 6)
+          );
+          ctx.fillStyle = color;
+          ctx.fill();
+        }
+
+        function getBoxBottomCenter(box) {
+          const rect = box.getBoundingClientRect();
+          const centerX = rect.left + rect.width / 2;
+          const bottomY = rect.bottom;
+          return { x: centerX, y: bottomY };
+        }
+
+        function getBoxTopCenter(box) {
+          const rect = box.getBoundingClientRect();
+          const centerX = rect.left + rect.width / 2;
+          const topY = rect.top;
+          return { x: centerX, y: topY };
+        }
+
+        function getNearestEdge(box, targetY) {
+          const rect = box.getBoundingClientRect();
+          const topY = rect.top;
+          const bottomY = rect.bottom;
+
+          // Determine which edge is closer to the target Y
+          const distanceToTop = Math.abs(targetY - topY);
+          const distanceToBottom = Math.abs(targetY - bottomY);
+
+          // Return the nearest edge's coordinates
+          if (distanceToTop < distanceToBottom) {
+            return { x: rect.left + rect.width / 2, y: topY }; // Center of the top edge
+          } else {
+            return { x: rect.left + rect.width / 2, y: bottomY }; // Center of the bottom edge
+          }
+        }
+
+        function drawArrowBetweenBoxes(
+          boxA,
+          boxB,
+          color,
+          startX,
+          startAtTop = false
+        ) {
+          const start = startAtTop
+            ? getBoxTopCenter(boxA)
+            : getBoxBottomCenter(boxA);
+          // const end = getNearestEdge(boxB, start.y);
+          // return { start, end, color };
+
+          // Determine the starting y-coordinate based on whether to start at the top or bottom of boxA
+          const startY = startAtTop
+            ? getBoxTopCenter(boxA).y // Get the top center y-coordinate of boxA
+            : getBoxBottomCenter(boxA).y; // Get the bottom center y-coordinate of boxA
+
+          const end = getNearestEdge(boxB, startY); // Get the nearest edge of boxB
+          return {
+            start: { x: startX, y: startY },
+            end: { ...end, x: startX },
+            color,
+          }; // Use the custom startX
+        }
+
+        const webapp = document.getElementById("wire-web-app");
+        const mobileapp = document.getElementById("wire-mobile-app");
+        const backend = document.getElementById("wire-backend");
+        const containers = document.getElementById("wire-containers");
+        const appservers = document.getElementById("wire-app-servers");
+        const realtime = document.getElementById("wire-realtime");
+
+        const colors = {
+          BRIGHT_RED: "rgba(255, 87, 51, 1)",
+          SKY_BLUE: "rgba(52, 152, 219, 1)",
+          LIME_GREEN: "rgba(46, 204, 113, 1)",
+          SUNSHINE_YELLOW: "rgba(241, 196, 15, 1)",
+          CORAL_PINK: "rgba(255, 111, 97, 1)",
+          VIOLET_PURPLE: "rgba(155, 89, 182, 1)",
+          ORANGE: "rgba(230, 114, 34, 1)",
+          TURQUOISE: "rgba(26, 188, 156, 1)",
+          CRIMSON: "rgba(192, 57, 43, 1)",
+          SLATE_GRAY: "rgba(127, 140, 141, 1)",
+          DEEP_BLUE: "rgba(41, 128, 185, 1)",
+          MINT_GREEN: "rgba(29, 209, 161, 1)",
+          LAVENDER: "rgba(234, 184, 228, 1)",
+          CHOCOLATE_BROWN: "rgba(125, 60, 152, 1)",
+          GOLD: "rgba(255, 215, 0, 1)",
+        };
+        const lines = [
+          drawArrowBetweenBoxes(webapp, backend, colors.BRIGHT_RED, 230),
+          drawArrowBetweenBoxes(backend, webapp, colors.SKY_BLUE, 235, true),
+          drawArrowBetweenBoxes(realtime, webapp, colors.LIME_GREEN, 390),
+          drawArrowBetweenBoxes(webapp, realtime, colors.LIME_GREEN, 395, true),
+
+          drawArrowBetweenBoxes(
+            mobileapp,
+            backend,
+            colors.SUNSHINE_YELLOW,
+            900
+          ),
+
+          drawArrowBetweenBoxes(
+            backend,
+            mobileapp,
+            colors.SUNSHINE_YELLOW,
+            905,
+            true
+          ),
+
+          drawArrowBetweenBoxes(appservers, realtime, colors.CORAL_PINK, 660),
+          drawArrowBetweenBoxes(
+            realtime,
+            appservers,
+            colors.CORAL_PINK,
+            665,
+            true
+          ),
+        ];
+
+        function animate() {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+          for (const line of lines) {
+            drawLine(
+              line.start.x,
+              line.start.y,
+              line.end.x,
+              line.end.y,
+              line.color
+            );
+          }
+
+          if (!startTime) startTime = performance.now();
+          const elapsedTime = ((performance.now() - startTime) * speed) / 1000;
+
+          dashOffset += 0.5;
+          if (dashOffset > 20) {
+            dashOffset = 0;
+          }
+
+          for (const line of lines) {
+            const distance = Math.sqrt(
+              (line.end.x - line.start.x) ** 2 +
+                (line.end.y - line.start.y) ** 2
+            );
+            const ratio = (elapsedTime % distance) / distance;
+            const arrowX = line.start.x + (line.end.x - line.start.x) * ratio;
+            const arrowY = line.start.y + (line.end.y - line.start.y) * ratio;
+
+            const angle = Math.atan2(
+              line.end.y - line.start.y,
+              line.end.x - line.start.x
+            );
+            drawArrowhead(arrowX, arrowY, angle, line.color);
+          }
+
+          animationFrameId = requestAnimationFrame(animate);
+        }
+
+        animate();
+      };
+    </script>
+  </body>
+</html>
